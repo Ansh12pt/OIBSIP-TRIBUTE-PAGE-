@@ -1,0 +1,130 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+}
+.box {
+    width: 90%;
+    height: 100vh;
+}
+.box #navbar ul {
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    padding: 4px -4%;
+    background:black;
+    list-style: none;
+}
+
+.box #navbar ul li a {
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: 6rem;
+    color: white;
+    position: relative;
+    padding: 0rem;
+}
+
+.box #navbar ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    right: 0;
+    width: 0%;
+    height: .2rem;
+    background-color: #ffd700;
+    transition: .3s ease-in;
+    
+}
+
+.box #navbar ul li a:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.about img {
+    width: 125.5vh;
+    height: 100%;
+    margin-left: -13rem;
+    margin-right: -8rem;
+    margin-bottom: -19rem;
+    transform: translateX(-200%);
+    animation: slideIn 1s linear forwards;
+    animation-delay: .3s;
+    opacity: 20;
+}
+
+.about .content h1 {
+    color: white;
+    font-size: 5rem;
+    margin-left: 35rem;
+    margin-top: -20rem;
+    padding: 3rem 10rem;
+    transform: translateX(200%);
+    animation: slideIn 1s linear forwards;
+    animation-delay: .3s;
+}
+.about .content p {
+    color: white;
+    font-size: 3rem;
+    margin-left: -10rem;
+    margin-top: -4rem;
+    padding: 1rem 14rem;
+    transform: translateX(200%);
+    animation: slideIn 1s linear forwards;
+    animation-delay: .3s;
+}
+.about .content h3 {
+    color: white;
+    font-size: 2rem;
+    margin-left: -10rem;
+    margin-top: 0rem;
+    padding: 0rem 13rem;
+    transform: translateX(200%);
+    animation: slideIn 1s linear forwards;
+    animation-delay: .3s;
+}
+.about .content ul {
+    color: white;
+    list-style: none;
+    font-size: 2rem;
+    margin-left: 31rem;
+    margin-top: 1rem;
+    padding: 0rem 10rem;
+    transform: translateX(200%);
+    animation: slideIn 1s linear forwards;
+    animation-delay: .3s;
+}
+.about .content ul li a {
+    text-decoration: none;
+    color: white;
+    list-style: disc;
+    margin-left: 3rem;
+    
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0%);
+    }
+}
